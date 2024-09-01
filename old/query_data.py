@@ -34,7 +34,7 @@ def query_rag(query_text: str):
 
     # Search the DB.
     results = db.similarity_search(query_text, k=5)
-    print(results[0].metadata.get("id", None))
+    # print(results[0].metadata.get("id", None))
 
     context_text = "\n\n---\n\n".join([doc.page_content for doc in results])
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
