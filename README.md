@@ -7,7 +7,7 @@
 ## 開啟方式
 1. 創建conda環境並且進入環境
    ```bash
-   conda create -n RAG ==3.10
+   conda create -n RAG python==3.10
    conda activate RAG
    ```
 2. 安裝依賴庫
